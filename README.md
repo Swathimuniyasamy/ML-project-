@@ -1,36 +1,41 @@
-The project uses the Telco Customer Churn dataset from IBM, and applies a binary classification model using Logistic Regression.
-🎯 Objective
-    To build a machine learning model that can:
-       Accurately classify customers into "Churned" or "Stayed". Help businesses take preventive action to retain at-risk customers
-📂 Dataset
-    Source: IBM Telco Customer Churn Dataset
-    Columns: 21 Features including:
-    Customer tenure
-    Monthly charges
-    Total charges
-    Internet service type
-    Contract type
-    Payment method, and more.
-    Target column: Churn (Yes / No)
-⚙️ Machine Learning Model
-    Model Used: Logistic Regression (Linear Classification)
-    Classification Type: Binary Classification
-Libraries:
-    pandas
-    scikit-learn
-    matplotlib / seaborn (optional for visuals)
-✅ Steps Performed
-    Loaded and cleaned the dataset (removed missing/invalid values)
-    Encoded categorical features using One-Hot Encoding
-    Split data into training and testing sets
-    Trained a Logistic Regression model
-    Evaluated accuracy and classification report
-    Predicted churn for a new customer sample
-📊 Results
-   Model Accuracy: ~78.5%
+🧠 Project Type: Binary Classification
+Model Used: Logistic Regression
+Goal: Predict whether a customer will churn or stay based on their service usage and account details.
 
-Precision (Churned): ~0.618
+📌 Overview
+This project uses machine learning to predict customer churn for a telecom company using the IBM Telco Customer Churn dataset. The main objective is to identify customers who are at risk of leaving the service so that the company can take proactive measures to retain them.
 
-Recall (Churned): ~0.503
+📁 Dataset
+Name: WA_Fn-UseC_-Telco-Customer-Churn.csv
 
-F1 Score: ~0.555
+Source: IBM Sample Data
+
+Records: ~7,000 customers
+
+Features Include:
+
+Demographics (gender, senior citizen)
+
+Services (internet, phone, streaming)
+
+Account info (contract type, monthly charges, total charges)
+
+Target Variable: Churn (Yes/No)
+
+🔧 Technologies & Libraries
+Python 🐍
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib / Seaborn (optional for visuals)
+
+📊 Output
+Accuracy: ~78.5%
+
+F1-score (Churned customers): ~0.555
+
+Classification Type: Binary (Churn = 1, No Churn = 0)
